@@ -54,7 +54,7 @@
               name="when-was-UCL-established" />
             <br /><br />
             <!-- This label is for the second question. -->
-            <label for="what-was-the-previous-name-of-the-competition"
+            <label for="previous-name-of-UCL"
               >2. What was the competition called before it became the
               UCL?</label
             >
@@ -89,7 +89,7 @@
             >
             <br /><br />
             <!-- This label is for the third and the last question in the first fieldset. -->
-            <label for="Which-club-has-the-most-UCL-trophies"
+            <label for="club-with-most-UCL-trophies"
               >3. Which club has the most UCL trophies?</label
             >
             <br /><br />
@@ -107,7 +107,7 @@
             it is about.-->
             <legend><b>Medium UCL Questions</b></legend>
             <!-- This label is for the first question in the second fieldset. -->
-            <label for="how-many-teams-compete-in-the-UCL-league-stage"
+            <label for="=number-of-teams-in-league-stage"
               >1. How many teams compete in the UCL league stage?</label
             >
             <br />
@@ -119,7 +119,7 @@
               name="number-of-teams-in-league-stage" />
             <br /><br />
             <!-- This label is for the second question in the second fieldset. -->
-            <label for="What-two-colours-are-primarily"
+            <label for="two-colours-in-UCL-logo"
               >2. What two colours are primarily used in the UCL logo?</label
             >
             <br />
@@ -127,17 +127,18 @@
             of what two colours are primarily used in the UCL logo. -->
             <input
               type="color"
-              id="two-colours-in-UCL-logo"
+              id="first-color-in-UCL-logo"
               name="two-colours-in-UCL-logo" />
             <input
               type="color"
-              id="two-colours-in-UCL-logo"
+              id="second-color-in-UCL-logo"
               name="two-colours-in-UCL-logo" />
             <br /><br />
             <!-- This label is for the third and last question in the second fieldset. -->
-            <label for="how-many-UCLs-does-real-madrid-have-as-of-2026"
+            <label for="number-of-UCLs-real-madrid-has"
               >3. How many UCLs does Real Madrid have as of 2026?</label
             >
+
             <br />
             <!-- The input field is for the third and last question in the second fieldset.
             The question is: How many UCLs does Real Madrid have as of 2026? The input type is number.-->
@@ -151,51 +152,74 @@
           and the user is expected to get most of these questions incorrect. -->
           <fieldset form="hard-ucl-questions">
             <legend><b>Hard UCL Questions</b></legend>
-            <label for="which-club-won-the-first-ever-UCL"
+            <label for="club-that-won-first-ever-UCL"
               >1. Which club won the first ever UCL tournament? Even when it was
               called the European Cup?</label
             >
             <br />
-            <input
-              type="text"
-              id="club-that-won-first-UCL"
-              name="club-that-won-first-UCL" />
+            <!-- This input field is used to answer the question of which club won the first ever UCL tournament. -->
+            <input type="text" id="club-that-won-first-UCL" name="first-UCL" />
             <br /><br />
-            <label for="which-year-did-real-madrid-win-their-first-five-UCLs"
-              >2. In which years did Real Madrid win their first five UCLs
-              consecutively?</label
-            >
+            <p>
+              2. In which years did Real Madrid win their first five UCLs
+              consecutively?
+            </p>
             <br />
+
+            <!-- These labels are used for the second question in the hard UCL questions fieldset, 
+            about which years Real Madrid won their first five UCLs consecutively. -->
+            <label for="first-UCL-real-madrid">
+              a. Year Real Madrid won first of their five consecutive UCLs:
+            </label>
+
             <!-- These input types are date input types and are used to answer the second question in the hard UCL questions fieldset,
             when Real Madrid won their first five UCLs consecutively. -->
             <input
               type="date"
-              id="year-real-madrid-won-first-five-UCLs"
-              name="year-real-madrid-won-first-five-UCLs" />
-            <input
-              type="date"
-              id="year-real-madrid-won-first-five-UCLs"
-              name="year-real-madrid-won-first-five-UCLs" />
-            <input
-              type="date"
-              id="year-real-madrid-won-first-five-UCLs"
-              name="year-real-madrid-won-first-five-UCLs" />
-            <input
-              type="date"
-              id="year-real-madrid-won-first-five-UCLs"
-              name="year-real-madrid-won-first-five-UCLs" />
-            <input
-              type="date"
-              id="year-real-madrid-won-first-five-UCLs"
-              name="year-real-madrid-won-first-five-UCLs" />
-            <br /><br />
-            <label for="which-club-won-the-UCL-in-2023"
-              >3. Which club won the UCL in 2023?</label
-            >
+              id="first-UCL-real-madrid"
+              name="first-UCL-real-madrid" />
             <br />
-            <select
-              id="club-that-won-UCL-in-2023"
-              name="club-that-won-UCL-in-2023">
+            <label for="second-UCL-real-madrid">
+              b. Year Real Madrid won second of their five consecutive UCLs:
+            </label>
+            <input
+              type="date"
+              id="second-UCL-real-madrid"
+              name="second-UCL-real-madrid" />
+            <br />
+            <label for="third-UCL-real-madrid">
+              c. Year Real Madrid won third of their five consecutive UCLs:
+            </label>
+            <input
+              type="date"
+              id="third-UCL-real-madrid"
+              name="third-UCL-real-madrid" />
+            <br />
+            <label for="fourth-UCL-real-madrid">
+              d. Year Real Madrid won fourth of their five consecutive UCLs:
+            </label>
+            <input
+              type="date"
+              id="fourth-UCL-real-madrid"
+              name="fourth-UCL-real-madrid" />
+            <br />
+            <label for="fifth-UCL-real-madrid">
+              e. Year Real Madrid won fifth of their five consecutive UCLs:
+            </label>
+            <input
+              type="date"
+              id="fifth-UCL-real-madrid"
+              name="fifth-UCL-real-madrid" />
+            <br /><br />
+            <!-- This label is used for the third question in the hard UCL questions fieldset,
+            about which club won the UCL in 2023. -->
+            <label for="club-won-2023-UCL">
+              3. Which club won the UCL in 2023?
+            </label>
+            <br />
+            <!-- This select input is used to answer the third question  in the last
+            fieldset which is a dropbox selection about which club won the UCL in 2023. -->
+            <select id="club-won-2023-UCL" name="2023-UCL">
               <option value="real-madrid">Real Madrid</option>
               <option value="liverpool">Liverpool</option>
               <option value="manchester-city">Manchester City</option>
@@ -205,19 +229,22 @@
             </select>
           </fieldset>
           <br /><br />
-
+          <!-- This textarea allows the user to type any additional comments 
+          they may have about this quiz. -->
           <textarea
             id="additional-comments"
             name="additional-comments"
             rows="5"
             cols="50"></textarea>
           <br /><br />
+          <!-- This input type is a submit button for the quiz which allows the user to submit the data they have inputed. -->
           <input type="Submit" value="Submit Quiz" />
           <br />
           <br />
           <br />
           <br />
           <br />
+          <!-- This input type is a reset button for the quiz which allows the user to restart the quiz. -->
           <input type="Reset" value="Restart Quiz" />
         </form>
       </section>
@@ -226,7 +253,7 @@
       <hr />
       <p>
         <mark>
-          &#169; Feranmi Adesanya 2025. This Website is
+          &#169; Feranmi Adesanya 2026. This Website is
           <strong>NOT</strong> associated with the UEFA Champions League! This
           is a school project.
         </mark>
