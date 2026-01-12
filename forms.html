@@ -3,7 +3,234 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>UCL QUIZ</title>
   </head>
-  <body></body>
+  <body style="text-align: center">
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="history.html">UCL History</a></li>
+          <li><a href="forms.html">UCL Quiz</a></li>
+        </ul>
+      </nav>
+      <h1><u>UEFA Champions League Quiz</u></h1>
+    </header>
+    <main>
+      <section>
+        <figure>
+          <img
+            src="images/ucl logo 2.png"
+            alt="UEFA Champions League logo"
+            width="200"
+            height="200" />
+        </figure>
+        <h2>Test Your Knowledge of the UEFA Champions League</h2>
+      </section>
+      <section>
+        <!-- 
+      This form is designed to test the user's knowledge 
+      of the UEFA Champions League and everything about it. 
+      -->
+        <form id="UEFA-Champions-League-quiz" method="get">
+          <!-- This fieldset contains questions about the 
+          UCL that are easy for the user to answer and the 
+          user is expected to get all of them right, at the very least, 
+          they should only get one of these questions incorrect. -->
+          <fieldset form="easy-UCL-questions">
+            <!-- This legend contains the title of the fieldset and what 
+            it is about.-->
+            <legend><b>Easy UCL Questions</b></legend>
+            <!-- This label is for the first question. -->
+            <label for="when-was-UCL-established"
+              >1. What year was the UEFA Champions League established? Hint:
+              (After the name was changed)</label
+            >
+            <br />
+            <!-- This input field is for the first question. The input type is text. -->
+            <input
+              type="text"
+              id="when-was-UCL-established"
+              name="when-was-UCL-established" />
+            <br /><br />
+            <!-- This label is for the second question. -->
+            <label for="what-was-the-previous-name-of-the-competition"
+              >2. What was the competition called before it became the
+              UCL?</label
+            >
+            <br />
+            <!-- These input fields are for the second question. The input type is radio. -->
+            <input
+              type="radio"
+              id="european-cup"
+              name="previous-name"
+              value="european-cup" />
+            <label for="european-cup">European Cup</label><br />
+            <input
+              type="radio"
+              id="uefa-league"
+              name="previous-name"
+              value="uefa-league" />
+            <label for="uefa-league">UEFA League</label><br />
+            <input
+              type="radio"
+              id="champions-competition"
+              name="previous-name"
+              value="champions-competition" />
+            <label for="champions-competition">Champions Competition</label
+            ><br />
+            <input
+              type="radio"
+              id="european-champions-league"
+              name="previous-name"
+              value="european-champions-league" />
+            <label for="european-champions-league"
+              >European Champions League</label
+            >
+            <br /><br />
+            <!-- This label is for the third and the last question in the first fieldset. -->
+            <label for="Which-club-has-the-most-UCL-trophies"
+              >3. Which club has the most UCL trophies?</label
+            >
+            <br /><br />
+            <input
+              type="text"
+              id="club-with-most-UCL-trophies"
+              name="club-with-most-UCL-trophies" />
+          </fieldset>
+          <br />
+          <!-- This fieldset contains questions about the UCL that are 
+          not too hard for the user to answer and the user should be 
+          getting at least one of these questions right. -->
+          <fieldset form="medium-ucl-questions">
+            <!-- This legend contains the title of the fieldset and what 
+            it is about.-->
+            <legend><b>Medium UCL Questions</b></legend>
+            <!-- This label is for the first question in the second fieldset. -->
+            <label for="how-many-teams-compete-in-the-UCL-league-stage"
+              >1. How many teams compete in the UCL league stage?</label
+            >
+            <br />
+            <!-- This input field is to answer the first question in the second fieldset 
+            of how many teams compete in the UCL league stage.-->
+            <input
+              type="number"
+              id="number-of-teams-in-league-stage"
+              name="number-of-teams-in-league-stage" />
+            <br /><br />
+            <!-- This label is for the second question in the second fieldset. -->
+            <label for="What-two-colours-are-primarily"
+              >2. What two colours are primarily used in the UCL logo?</label
+            >
+            <br />
+            <!-- These input fields are to answer the second question in the second fieldset 
+            of what two colours are primarily used in the UCL logo. -->
+            <input
+              type="color"
+              id="two-colours-in-UCL-logo"
+              name="two-colours-in-UCL-logo" />
+            <input
+              type="color"
+              id="two-colours-in-UCL-logo"
+              name="two-colours-in-UCL-logo" />
+            <br /><br />
+            <!-- This label is for the third and last question in the second fieldset. -->
+            <label for="how-many-UCLs-does-real-madrid-have-as-of-2026"
+              >3. How many UCLs does Real Madrid have as of 2026?</label
+            >
+            <br />
+            <!-- The input field is for the third and last question in the second fieldset.
+            The question is: How many UCLs does Real Madrid have as of 2026? The input type is number.-->
+            <input
+              type="number"
+              id="number-of-UCLs-real-madrid-has"
+              name="number-of-UCLs-real-madrid-has" />
+          </fieldset>
+          <br /><br />
+          <!-- This fieldset contains questions about the UCL that are hard for the user to answer
+          and the user is expected to get most of these questions incorrect. -->
+          <fieldset form="hard-ucl-questions">
+            <legend><b>Hard UCL Questions</b></legend>
+            <label for="which-club-won-the-first-ever-UCL"
+              >1. Which club won the first ever UCL tournament? Even when it was
+              called the European Cup?</label
+            >
+            <br />
+            <input
+              type="text"
+              id="club-that-won-first-UCL"
+              name="club-that-won-first-UCL" />
+            <br /><br />
+            <label for="which-year-did-real-madrid-win-their-first-five-UCLs"
+              >2. In which years did Real Madrid win their first five UCLs
+              consecutively?</label
+            >
+            <br />
+            <!-- These input types are date input types and are used to answer the second question in the hard UCL questions fieldset,
+            when Real Madrid won their first five UCLs consecutively. -->
+            <input
+              type="date"
+              id="year-real-madrid-won-first-five-UCLs"
+              name="year-real-madrid-won-first-five-UCLs" />
+            <input
+              type="date"
+              id="year-real-madrid-won-first-five-UCLs"
+              name="year-real-madrid-won-first-five-UCLs" />
+            <input
+              type="date"
+              id="year-real-madrid-won-first-five-UCLs"
+              name="year-real-madrid-won-first-five-UCLs" />
+            <input
+              type="date"
+              id="year-real-madrid-won-first-five-UCLs"
+              name="year-real-madrid-won-first-five-UCLs" />
+            <input
+              type="date"
+              id="year-real-madrid-won-first-five-UCLs"
+              name="year-real-madrid-won-first-five-UCLs" />
+            <br /><br />
+            <label for="which-club-won-the-UCL-in-2023"
+              >3. Which club won the UCL in 2023?</label
+            >
+            <br />
+            <select
+              id="club-that-won-UCL-in-2023"
+              name="club-that-won-UCL-in-2023">
+              <option value="real-madrid">Real Madrid</option>
+              <option value="liverpool">Liverpool</option>
+              <option value="manchester-city">Manchester City</option>
+              <option value="bayern-munich">Bayern Munich</option>
+              <option value="chelsea">Chelsea</option>
+              <option value="real-madrid">Real Madrid</option>
+            </select>
+          </fieldset>
+          <br /><br />
+
+          <textarea
+            id="additional-comments"
+            name="additional-comments"
+            rows="5"
+            cols="50"></textarea>
+          <br /><br />
+          <input type="Submit" value="Submit Quiz" />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <input type="Reset" value="Restart Quiz" />
+        </form>
+      </section>
+    </main>
+    <footer>
+      <hr />
+      <p>
+        <mark>
+          &#169; Feranmi Adesanya 2025. This Website is
+          <strong>NOT</strong> associated with the UEFA Champions League! This
+          is a school project.
+        </mark>
+      </p>
+    </footer>
+  </body>
 </html>
