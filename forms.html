@@ -246,6 +246,11 @@
             </select>
           </fieldset>
           <br /><br />
+          <!-- This label tag is to explain to the user what the textarea is for. -->
+          <label for="additional-comments"
+            ><b>Any additional comments about this quiz?</b></label
+          >
+          <br />
           <!-- This textarea allows the user to type any additional comments 
           they may have about this quiz. The ID is to tell screen readers 
           what the input field is for. The name is to label the input field. -->
@@ -253,7 +258,8 @@
             id="additional-comments"
             name="additional-comments"
             rows="5"
-            cols="50"></textarea>
+            cols="50">
+          </textarea>
           <br /><br />
           <!-- This input type is a submit button for the quiz which allows the user to submit the data they have inputed. -->
           <input type="Submit" value="Submit Quiz" />
