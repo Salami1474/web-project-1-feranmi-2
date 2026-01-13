@@ -29,14 +29,15 @@
       </section>
       <section>
         <!-- 
-      This form is designed to test the user's knowledge 
-      of the UEFA Champions League and everything about it. 
-      -->
+        This form is designed to test the user's knowledge 
+        of the UEFA Champions League and everything about it. 
+        The Id represents what the form is about. The method is get. -->
         <form id="UEFA-Champions-League-quiz" method="get">
           <!-- This fieldset contains questions about the 
           UCL that are easy for the user to answer and the 
           user is expected to get all of them right, at the very least, 
-          they should only get one of these questions incorrect. -->
+          they should only get one of these questions incorrect. The form tag
+          represents what this fieldset is about.-->
           <fieldset form="easy-UCL-questions">
             <!-- This legend contains the title of the fieldset and what 
             it is about.-->
@@ -47,19 +48,23 @@
               (After the name was changed)</label
             >
             <br />
-            <!-- This input field is for the first question. The input type is text. -->
+            <!-- This input field is for the first question. The input type is text.
+            The id is to tell screen readers what the input field is for. The name is to label the
+            input field. -->
             <input
               type="text"
               id="when-was-UCL-established"
               name="when-was-UCL-established" />
             <br /><br />
-            <!-- This label is for the second question. -->
-            <label for="previous-name-of-UCL"
+            <!-- This label is for the second question, in the first fieldset. -->
+            <label for="previous-name"
               >2. What was the competition called before it became the
               UCL?</label
             >
             <br />
-            <!-- These input fields are for the second question. The input type is radio. -->
+            <!-- These input fields are for the second question. The input type is radio. 
+            The IDs are to tell screen readers what the input fields are for. The names
+            are to represent the type of question the input field is for.-->
             <input
               type="radio"
               id="european-cup"
@@ -88,11 +93,14 @@
               >European Champions League</label
             >
             <br /><br />
-            <!-- This label is for the third and the last question in the first fieldset. -->
+            <!-- This label is for the third and the last question in the first fieldset.
+            -->
             <label for="club-with-most-UCL-trophies"
               >3. Which club has the most UCL trophies?</label
             >
             <br /><br />
+            <!-- This input field is for the third and the last question in the first fieldset. 
+            The ID is to tell screen readers what the input field is for. The name is to label the input field. -->
             <input
               type="text"
               id="club-with-most-UCL-trophies"
@@ -101,7 +109,8 @@
           <br />
           <!-- This fieldset contains questions about the UCL that are 
           not too hard for the user to answer and the user should be 
-          getting at least one of these questions right. -->
+          getting at least one of these questions right. The form attribute is to tell
+          the form that this fieldset belongs to. -->
           <fieldset form="medium-ucl-questions">
             <!-- This legend contains the title of the fieldset and what 
             it is about.-->
@@ -124,7 +133,8 @@
             >
             <br />
             <!-- These input fields are to answer the second question in the second fieldset 
-            of what two colours are primarily used in the UCL logo. -->
+            of what two colours are primarily used in the UCL logo. The ID is used to tell 
+            screen readers what the input fields are for. The name attribute is to label the input fields. -->
             <input
               type="color"
               id="first-color-in-UCL-logo"
@@ -141,7 +151,8 @@
 
             <br />
             <!-- The input field is for the third and last question in the second fieldset.
-            The question is: How many UCLs does Real Madrid have as of 2026? The input type is number.-->
+            The question is: How many UCLs does Real Madrid have as of 2026? The input type is number.
+            The ID is to tell screen readers what the input field is for. The name is to label the input field. -->
             <input
               type="number"
               id="number-of-UCLs-real-madrid-has"
@@ -157,7 +168,8 @@
               called the European Cup?</label
             >
             <br />
-            <!-- This input field is used to answer the question of which club won the first ever UCL tournament. -->
+            <!-- This input field is used to answer the question of which club won the first ever UCL tournament. 
+            The ID is to tell screen readers what the input field is for. The name is to label the input field. -->
             <input type="text" id="club-that-won-first-UCL" name="first-UCL" />
             <br /><br />
             <p>
@@ -172,8 +184,12 @@
               a. Year Real Madrid won first of their five consecutive UCLs:
             </label>
 
-            <!-- These input types are date input types and are used to answer the second question in the hard UCL questions fieldset,
-            when Real Madrid won their first five UCLs consecutively. -->
+            <!-- These input types are date input types and are used to answer 
+            the second question in the hard UCL questions fieldset,
+            when Real Madrid won their first five UCLs consecutively. 
+            The IDs represent what the input fields are for. The names are to 
+            label the input fields.
+            -->
             <input
               type="date"
               id="first-UCL-real-madrid"
@@ -218,7 +234,8 @@
             </label>
             <br />
             <!-- This select input is used to answer the third question  in the last
-            fieldset which is a dropbox selection about which club won the UCL in 2023. -->
+            fieldset which is a dropbox selection about which club won the UCL in 2023.
+            The ID is to tell screen readers what the input field is for. The name is to label the input field. -->
             <select id="club-won-2023-UCL" name="2023-UCL">
               <option value="real-madrid">Real Madrid</option>
               <option value="liverpool">Liverpool</option>
@@ -230,7 +247,8 @@
           </fieldset>
           <br /><br />
           <!-- This textarea allows the user to type any additional comments 
-          they may have about this quiz. -->
+          they may have about this quiz. The ID is to tell screen readers 
+          what the input field is for. The name is to label the input field. -->
           <textarea
             id="additional-comments"
             name="additional-comments"
