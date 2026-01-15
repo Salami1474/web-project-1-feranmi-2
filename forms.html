@@ -32,7 +32,7 @@
         This form is designed to test the user's knowledge 
         of the UEFA Champions League and everything about it. 
         The Id represents what the form is about. The method is get. -->
-        <form id="UEFA-Champions-League-quiz" method="get">
+        <form id="UEFA-Champions-League-quiz" method="GET">
           <!-- This fieldset contains questions about the 
           UCL that are easy for the user to answer and the 
           user is expected to get all of them right, at the very least, 
@@ -54,7 +54,8 @@
             <input
               type="text"
               id="when-was-UCL-established"
-              name="when-was-UCL-established" />
+              name="when-was-UCL-established"
+              required />
             <br /><br />
             <!-- This label is for the second question, in the first fieldset. -->
             <label for="previous-name"
@@ -69,26 +70,30 @@
               type="radio"
               id="european-cup"
               name="previous-name"
-              value="european-cup" />
+              value="european-cup"
+              required />
             <label for="european-cup">European Cup</label><br />
             <input
               type="radio"
               id="uefa-league"
               name="previous-name"
-              value="uefa-league" />
+              value="uefa-league"
+              required />
             <label for="uefa-league">UEFA League</label><br />
             <input
               type="radio"
               id="champions-competition"
               name="previous-name"
-              value="champions-competition" />
+              value="champions-competition"
+              required />
             <label for="champions-competition">Champions Competition</label
             ><br />
             <input
               type="radio"
               id="european-champions-league"
               name="previous-name"
-              value="european-champions-league" />
+              value="european-champions-league"
+              required />
             <label for="european-champions-league"
               >European Champions League</label
             >
@@ -104,7 +109,8 @@
             <input
               type="text"
               id="club-with-most-UCL-trophies"
-              name="club-with-most-UCL-trophies" />
+              name="club-with-most-UCL-trophies"
+              required />
           </fieldset>
           <br />
           <!-- This fieldset contains questions about the UCL that are 
@@ -125,7 +131,8 @@
             <input
               type="number"
               id="number-of-teams-in-league-stage"
-              name="number-of-teams-in-league-stage" />
+              name="number-of-teams-in-league-stage"
+              required />
             <br /><br />
             <!-- This label is for the second question in the second fieldset. -->
             <label for="two-colours-in-UCL-logo"
@@ -138,11 +145,13 @@
             <input
               type="color"
               id="first-color-in-UCL-logo"
-              name="two-colours-in-UCL-logo" />
+              name="two-colours-in-UCL-logo"
+              required />
             <input
               type="color"
               id="second-color-in-UCL-logo"
-              name="two-colours-in-UCL-logo" />
+              name="two-colours-in-UCL-logo"
+              required />
             <br /><br />
             <!-- This label is for the third and last question in the second fieldset. -->
             <label for="number-of-UCLs-real-madrid-has"
@@ -156,7 +165,8 @@
             <input
               type="number"
               id="number-of-UCLs-real-madrid-has"
-              name="number-of-UCLs-real-madrid-has" />
+              name="number-of-UCLs-real-madrid-has"
+              required />
           </fieldset>
           <br /><br />
           <!-- This fieldset contains questions about the UCL that are hard for the user to answer
@@ -170,7 +180,11 @@
             <br />
             <!-- This input field is used to answer the question of which club won the first ever UCL tournament. 
             The ID is to tell screen readers what the input field is for. The name is to label the input field. -->
-            <input type="text" id="club-that-won-first-UCL" name="first-UCL" />
+            <input
+              type="text"
+              id="club-that-won-first-UCL"
+              name="first-UCL"
+              required />
             <br /><br />
             <p>
               2. In which years did Real Madrid win their first five UCLs
@@ -193,7 +207,8 @@
             <input
               type="date"
               id="first-UCL-real-madrid"
-              name="first-UCL-real-madrid" />
+              name="first-UCL-real-madrid"
+              required />
             <br />
             <label for="second-UCL-real-madrid">
               b. Year Real Madrid won second of their five consecutive UCLs:
@@ -201,7 +216,8 @@
             <input
               type="date"
               id="second-UCL-real-madrid"
-              name="second-UCL-real-madrid" />
+              name="second-UCL-real-madrid"
+              required />
             <br />
             <label for="third-UCL-real-madrid">
               c. Year Real Madrid won third of their five consecutive UCLs:
@@ -209,7 +225,8 @@
             <input
               type="date"
               id="third-UCL-real-madrid"
-              name="third-UCL-real-madrid" />
+              name="third-UCL-real-madrid"
+              required />
             <br />
             <label for="fourth-UCL-real-madrid">
               d. Year Real Madrid won fourth of their five consecutive UCLs:
@@ -217,7 +234,8 @@
             <input
               type="date"
               id="fourth-UCL-real-madrid"
-              name="fourth-UCL-real-madrid" />
+              name="fourth-UCL-real-madrid"
+              required />
             <br />
             <label for="fifth-UCL-real-madrid">
               e. Year Real Madrid won fifth of their five consecutive UCLs:
@@ -225,7 +243,8 @@
             <input
               type="date"
               id="fifth-UCL-real-madrid"
-              name="fifth-UCL-real-madrid" />
+              name="fifth-UCL-real-madrid"
+              required />
             <br /><br />
             <!-- This label is used for the third question in the hard UCL questions fieldset,
             about which club won the UCL in 2023. -->
